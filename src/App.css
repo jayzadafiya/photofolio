@@ -1,0 +1,24 @@
+.app {
+    min-width: 100vW;
+    min-height: 100vh;
+    background: linear-gradient(120deg, hsla(215, 90%, 38%) 60%, hsla(204, 59%, 50%, 0.8));
+    box-sizing: border-box;
+}
+@media (max-width:1024px) {
+    .app{
+        min-height: 140vh;
+    }
+}
+@media (max-width:768px) {
+    .app {
+        background: linear-gradient(120deg, hsla(215, 90%, 38%) 50%, hsla(204, 59%, 50%, 0.9));
+        min-height: 125vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        background: linear-gradient(120deg, hsla(215, 90%, 38%) 33%, hsla(204, 59%, 50%, 0.8));
+        min-height: 140vh;
+    }
+}

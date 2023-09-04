@@ -1,0 +1,215 @@
+.navTitle {
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3498db;
+}
+
+.navLeft {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+
+}
+
+.navImg {
+  height: 30px;
+}
+
+.drag_n_drop {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: start;
+  justify-content: center;
+  word-break: break-all;
+}
+
+.dndDroup {
+  background-color: #f1f2f4;
+  border-radius: 15px;
+  padding: .5rem;
+  overflow: hidden;
+  margin: 0 1rem;
+  margin-top: 5rem;
+  box-shadow: 0 5px 10px #091e4240, 0 0 10px #091e424f;
+}
+
+
+.dndItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: white;
+  box-shadow: 0 2px 3px #091e4240, 0 0 3px #091e424f;
+  border-radius: 10px;
+  color: #121213;
+}
+
+.dndItem:not(:last-of-type) {
+  margin-bottom: .5rem;
+}
+
+.dndItem * {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.groupTitle {
+  margin-top: 10px;
+  margin-left: 8px;
+  text-align: left;
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.current {
+  background-color: #282c34;
+}
+
+.editBackground,
+.albumForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(hsla(215, 90%, 32.7%, 0.6), hsla(215, 90%, 37.7%, 0.3));
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editFormContainer,
+.albumContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.6);
+  width: 300px;
+}
+
+.addText {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  font-weight: 500;
+  color: rgb(75, 74, 74);
+  font-size: 16px;
+  font-family: system-ui;
+}
+
+.addText img {
+  height: 15px;
+}
+
+.albumContainer {
+  width: 400px;
+}
+
+.albumContainer span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  word-break: break-all;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.input {
+  border: 1px solid gray;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 20px;
+  background-color: transparent;
+  word-break: break-all;
+  color: black;
+}
+
+.input::placeholder {
+  font-size: 1rem;
+  font-weight: 600;
+  word-break: break-all;
+  padding: 3px;
+}
+
+.input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.submitBtn {
+  background-color: #0c66e4;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.025rem;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #0c66e4;
+  border: 1px solid #9c88ff;
+}
+
+.clearBtn {
+  background-color: rgb(228, 14, 14);
+}
+
+.clearBtn:hover {
+  color: #e40c0c;
+  border: 1px solid #ff8888;
+}
+
+@media (max-width: 768px) {
+  .navTitle {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .navImg {
+    height: 20px;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .navTitle {
+    padding: 10px;
+  }
+
+  .dndDroup {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    max-width: 270px;
+  }
+}
