@@ -14,7 +14,7 @@ This is a photo portfolio website built with React.js and Firebase, designed to 
 
 ## Demo
 
-[Live Demo](#) - Add a link to your live website here.
+[Live Demo](https://64f5973c2cc4e02283e68807--golden-squirrel-4aef39.netlify.app/) - Add a link to your live website here.
 
 ## Features
 
